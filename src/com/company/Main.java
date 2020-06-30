@@ -17,17 +17,18 @@ public class Main {
    }
     public static void main(String[] args) throws IOException, ParseException {
 
-       Pair<String ,Integer> p=sc();
-        System.out.println(p.getKey());
-        System.out.println(p.getValue());
+//       Pair<String ,Integer> p=sc();
+//        System.out.println(p.getKey());
+//        System.out.println(p.getValue());
         // PimData.scrapeData();
 
         //HkBot.scrapeData();
         //  PermData.scrapeData();
        // SenatorsData.scrapeData();
         // Lithuania_Bot.scrapeData();
+SenatorsFinance.scrapeData();
 
-
+        
 
     }
 }
