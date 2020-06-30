@@ -32,7 +32,7 @@ public class SenatorsFinance {
             webClient.setJavaScriptTimeout(10000);
             webClient.waitForBackgroundJavaScriptStartingBefore(10000);
 
-            HtmlPage page = webClient.getPage("https://www.opensecrets.org/personal-finances");
+            HtmlPage page = webClient.getPage("https://www.congress.gov/members?q={%22chamber%22:%22Senate%22,%22congress%22:%22116%22}&searchResultViewType=expanded&pageSize=250");
             webClient.waitForBackgroundJavaScript(10_000);
             System.out.println(page.getWebResponse().getContentAsString());
             // webClient.waitForBackgroundJavaScript(10000);
