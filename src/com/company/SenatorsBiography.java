@@ -61,7 +61,7 @@ public class SenatorsBiography implements RefreshHandler, Serializable {
                 String state = senator.select("div.quick-search-member > div.member-profile.member-image-exists > span:nth-child(1) > span").text();
                 String party = senator.select("div.quick-search-member > div.member-profile.member-image-exists > span:nth-child(2) > span").text();
                 Elements duration = senator.select("div.quick-search-member > div.member-profile.member-image-exists > span:nth-child(3) > span > ul>li");
-                served = duration.text();
+                served = duration.text()+"\t";
                 if (duration.size() > 1) {
                     for (Element date : duration) {
                         served += date.select(":nth-child(2)").text();
@@ -75,7 +75,7 @@ public class SenatorsBiography implements RefreshHandler, Serializable {
                 System.out.println("https://www.congress.gov" + img);
                 System.out.println("------------------------------------------");
             }
-HtmlPage page2=webClient.getPage()
+
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
