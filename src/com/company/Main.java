@@ -10,7 +10,8 @@ public class Main {
         //SenatorsBiography.scrapeData();
        // Lithuania_Bot.scrapeData();
         //SenatorsNetWorth.scrapeData();
-        SenatorBioDesc.Scrap();
+      //  SenatorBioDesc.Scrap();
+        GB_Bot.scrapeData();
 
 
     }
