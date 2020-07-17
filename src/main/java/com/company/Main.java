@@ -11,7 +11,8 @@ public class Main {
        // Lithuania_Bot.scrapeData();
         //SenatorsNetWorth.scrapeData();
       //  SenatorBioDesc.Scrap();
-        GB_Bot.scrapeData();
+       // GB_Bot.scrapeData();
+        IndiaBot.scrapeData();
 
 
     }
