@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="htmlunit-2.41.0">
+  <library name="jackson-2.6.12">
     <CLASSES>
-      <root url="jar://D:/dwnloads/htmlunit-2.41.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jackson-2.6.12.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
