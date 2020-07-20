@@ -70,12 +70,16 @@ public class IndiaBot {
                         String table = jsonObject1.getString("MORE");
                         System.out.println("table " + table);
                         String date = jsonObject1.getString("NEWS_DT");
-                        System.out.println("date " + date);
+                        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+                        Date dated=dateFormat.parse(date);
+                        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                        String fm=formatter.format(dated);
+                        System.out.println("date " + fm);
                         String pdf = jsonObject1.getString("ATTACHMENTNAME");
                         String pdfLink;
-                        if (pdf.equals(" ")) {
-                            pdfLink = table;
-                        }
+//                        if (pdf.equals(" ")) {
+//                            pdfLink = table;
+//                        }
                         pdfLink = "https://www.bseindia.com/corporates/xml-data/corpfiling/AttachLive/" + pdf;
                         System.out.println(pdfLink);
                         System.out.println(formattedDate);
