@@ -9,8 +9,8 @@
         <module name="bots_testing" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="bots_testing" target="7" />
+    <bytecodeTargetLevel target="8">
+      <module name="bots_testing" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
